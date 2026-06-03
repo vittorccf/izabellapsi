@@ -1,0 +1,86 @@
+/* =========================================================
+   Design Tokens — Identidade "Psi Planner"
+   Paleta vinho/bordô + pastéis · Tipografia Prata + Inter
+   ========================================================= */
+
+:root {
+  /* ---------- Cores · base ---------- */
+  --color-bg:            #faf7f5; /* off-white / creme */
+  --color-bg-alt:        #f3ece8; /* creme um tom mais quente */
+  --color-surface:       #ffffff;
+
+  /* ---------- Cores · vinho ---------- */
+  --color-wine-900:      #2a1015;
+  --color-wine-800:      #3a1419; /* night wine */
+  --color-wine-700:      #531a25;
+  --color-wine:          #6a1f2b; /* vinho principal / marca */
+  --color-wine-soft:     #8a3a45;
+
+  /* ---------- Cores · pastéis de apoio ---------- */
+  --color-rose:          #f4d9dd;
+  --color-green:         #dceada;
+  --color-sand:          #f6efd4;
+
+  /* ---------- Cores · texto ---------- */
+  --color-ink:           #3a2226; /* texto principal */
+  --color-muted:         #7c6a6e; /* texto secundário */
+  --color-on-wine:       #f6ece9; /* texto sobre vinho */
+  --color-on-wine-muted: #d8bdc1;
+
+  /* ---------- Linhas e foco ---------- */
+  --color-border:        #e7ddd8;
+  --color-focus:         #8a3a45;
+
+  /* ---------- Tipografia ---------- */
+  --font-serif: "Prata", Georgia, "Times New Roman", serif;
+  --font-sans:  "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Escala fluida (clamp: min · preferido · max) */
+  --fs-xs:   0.8125rem;
+  --fs-sm:   0.9375rem;
+  --fs-base: 1rem;
+  --fs-md:   clamp(1.0625rem, 0.5vw + 0.95rem, 1.1875rem);
+  --fs-lg:   clamp(1.25rem, 1vw + 1rem, 1.5rem);
+  --fs-xl:   clamp(1.6rem, 2vw + 1rem, 2.1rem);
+  --fs-2xl:  clamp(2.1rem, 3.5vw + 1rem, 3.2rem);
+  --fs-3xl:  clamp(2.6rem, 5vw + 1rem, 4.4rem);
+
+  --lh-tight: 1.12;
+  --lh-snug:  1.3;
+  --lh-base:  1.65;
+
+  /* ---------- Espaçamento ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  /* Ritmo vertical das seções */
+  --section-y: clamp(4rem, 9vw, 8rem);
+
+  /* ---------- Layout ---------- */
+  --container:      1200px;
+  --container-text: 760px;
+  --radius-sm: 8px;
+  --radius:    16px;
+  --radius-lg: 28px;
+  --radius-full: 999px;
+
+  /* ---------- Sombras (suaves) ---------- */
+  --shadow-sm: 0 1px 2px rgba(58, 20, 25, 0.06);
+  --shadow:    0 14px 40px -18px rgba(58, 20, 25, 0.28);
+  --shadow-lg: 0 30px 70px -28px rgba(58, 20, 25, 0.38);
+
+  /* ---------- Movimento ---------- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --transition: 0.4s var(--ease);
+
+  /* ---------- Header ---------- */
+  --header-h: 76px;
+}

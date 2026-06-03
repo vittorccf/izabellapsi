@@ -1,0 +1,10 @@
+/* =========================================================
+   main.css — ponto de entrada único de estilos
+   Importa os módulos na ordem da cascata (tokens → base → layout → componentes → seções)
+   ========================================================= */
+
+@import "variables.css";
+@import "base.css";
+@import "layout.css";
+@import "components.css";
+@import "sections.css";
