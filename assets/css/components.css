@@ -133,6 +133,12 @@
 .pillar h3 { font-size: var(--fs-xl); }
 
 .pillar__list { display: grid; gap: var(--space-3); margin-top: var(--space-2); }
+
+/* Lista em duas colunas (ex.: tópicos da mentoria) */
+.pillar__list--cols { grid-template-columns: 1fr 1fr; column-gap: var(--space-5); }
+@media (max-width: 600px) {
+  .pillar__list--cols { grid-template-columns: 1fr; }
+}
 .pillar__list li {
   display: flex;
   gap: var(--space-3);

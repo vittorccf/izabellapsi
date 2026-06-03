@@ -40,8 +40,7 @@ izabellapsi/
 │   │
 │   └── images/                # Fotos otimizadas, com nomes semânticos
 │       ├── izabella-hero.jpg
-│       ├── izabella-sobre.jpg
-│       └── izabella-retrato.jpg
+│       └── izabella-sobre.jpg
 │
 ├── imgs/                      # Fotos originais (fonte)
 ├── references/                # Identidade visual de referência (id.jpeg)

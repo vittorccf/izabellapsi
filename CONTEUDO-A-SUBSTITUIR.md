@@ -10,10 +10,9 @@ informações verdadeiras. No código, cada ponto está marcado com `<!-- PLACEH
 
 ## 1. Identidade & marca
 
-- [ ] **Nome completo / nome de marca** exibido (hoje: apenas "Izabella")
-- [ ] **Sobrenome** (para títulos, e-mail, schema)
-- [ ] Confirmar o **monograma do logo** (hoje: letra "I" em um quadrado vinho). Existe logo oficial?
-- [ ] **Tagline** sob o nome (hoje: "Psicanálise & Mentoria")
+- [x] **Nome:** Izabella Lima ✓
+- [x] **Tagline:** "Psicoterapia & Mentoria" ✓
+- [ ] Confirmar o **monograma do logo** (hoje: "IL" em um quadrado vinho). Existe logo oficial?
 
 ## 2. Contatos (links hoje são placeholders `#` / `0000000000` / `exemplo.com.br`)
 
@@ -25,22 +24,23 @@ informações verdadeiras. No código, cada ponto está marcado com `<!-- PLACEH
 
 ## 3. Sobre a Izabella
 
-- [ ] **Bio real** (hoje há um texto fictício acolhedor)
-- [ ] **Formação**: graduação (instituição), especializações, ano (linha "Formação:" no "Sobre")
-- [ ] **Tempo de atuação** (hoje: "+8 anos*")
-- [ ] Confirmar a frase de posicionamento do hero
+- [x] **Bio real** aplicada ✓ (texto enviado por você)
+- [x] **Formação** aplicada ✓ (PUC-PR, Corpo Freudiano-RJ, ISST/Terapia do Esquema)
+- [x] **Tempo de atuação:** removido a seu pedido ✓
+- [x] Foco clínico aplicado ✓ (Transtornos de Personalidade — Cluster B)
 
-## 4. Números / prova social (hoje ilustrativos, marcados com `*`)
+## 4. Números / prova social
 
-- [ ] **Nº de mulheres acompanhadas** (hoje: "+500")
-- [ ] **Anos de clínica** (hoje: "+8")
+- [x] Números fictícios (+500 mulheres / +8 anos) **removidos** ✓
+- [x] Faixa agora mostra: 9 países · 100% online · Cluster B · PUC-PR ✓
 - [ ] Confirmar **"9 países"** e, se possível, **quais** (pode virar um detalhe bonito na página)
 - [ ] "100% online" está correto? Há atendimento presencial?
 
 ## 5. Serviços / abordagens
 
-- [ ] Confirmar os **temas clínicos** listados (trauma, relações, autoestima, ansiedade, maternidade)
-- [ ] **Mentoria para psicólogas**: confirmar nome do serviço, formato (individual? grupo? curso?), tópicos
+- [x] **Temas clínicos** alinhados à bio ✓ (Cluster B, trauma, relações/dependência, autoestima, amadurecimento)
+- [x] **Tópicos da mentoria** aplicados ✓ (12 itens enviados por você)
+- [ ] **Mentoria**: confirmar nome do serviço e formato (individual? grupo? curso?)
 - [ ] **Valores** (se quiser exibir) — hoje **não** há preços na página
 - [ ] **Duração/formato das sessões** (hoje: "~50 min, por videochamada")
 
