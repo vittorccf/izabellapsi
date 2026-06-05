@@ -199,23 +199,6 @@
   margin-top: var(--space-6);
 }
 
-.hero__proof {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-5) var(--space-6);
-  margin-top: var(--space-7);
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-border);
-}
-.hero__proof div { line-height: 1.2; }
-.hero__proof b {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: var(--fs-xl);
-  color: var(--color-wine);
-}
-.hero__proof span { font-size: var(--fs-sm); color: var(--color-muted); }
-
 .hero__media { position: relative; }
 .hero__media .framed { rotate: 1.5deg; }
 .hero__media::after {

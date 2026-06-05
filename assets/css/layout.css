@@ -103,20 +103,3 @@
   .grid--4 { grid-template-columns: 1fr; }
 }
 
-/* Layout de duas colunas (texto + mídia) */
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 5vw, 5rem);
-  align-items: center;
-}
-
-.split--media-first .split__media { order: -1; }
-
-@media (max-width: 860px) {
-  .split {
-    grid-template-columns: 1fr;
-    gap: clamp(2rem, 6vw, 3rem);
-  }
-  .split--media-first .split__media { order: 0; }
-}

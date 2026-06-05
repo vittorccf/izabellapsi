@@ -31,7 +31,7 @@ izabellapsi/
 │   │   ├── main.css           # Ponto de entrada (@import dos módulos)
 │   │   ├── variables.css      # Design tokens (cores, fontes, espaços)
 │   │   ├── base.css           # Reset + estilos base + acessibilidade
-│   │   ├── layout.css         # Container, grids, splits, seções
+│   │   ├── layout.css         # Container, grids, seções
 │   │   ├── components.css     # Botões, cards, pílulas, FAQ, depoimentos…
 │   │   └── sections.css       # Header, hero, footer, animações de reveal
 │   │
@@ -39,10 +39,9 @@ izabellapsi/
 │   │   └── main.js            # Header, menu mobile, scroll-spy, reveal, FAQ
 │   │
 │   └── images/                # Fotos otimizadas, com nomes semânticos
-│       ├── izabella-hero.jpg
-│       └── izabella-sobre.jpg
+│       └── izabella-hero.jpg
 │
-├── imgs/                      # Fotos originais (fonte)
+├── imgs/                      # Fotos originais (fonte) — local, fora do git
 ├── references/                # Identidade visual de referência (id.jpeg)
 └── souce/                     # Material de origem (info.txt)
 ```
