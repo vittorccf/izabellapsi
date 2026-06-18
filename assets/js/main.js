@@ -5,6 +5,7 @@
    · Scroll-spy nos links de navegação
    · Reveal de elementos ao entrar na viewport
    · FAQ accordion acessível
+   · Carrossel de depoimentos
    · Ano dinâmico no rodapé
    ========================================================= */
 (function () {
@@ -104,6 +105,56 @@
       trigger.setAttribute("aria-expanded", String(!open));
       panel.style.maxHeight = open ? "0px" : panel.scrollHeight + "px";
     });
+  });
+
+  /* ---------- Carrossel de depoimentos ---------- */
+  selectAll("[data-carousel]").forEach((carousel) => {
+    const track = select("[data-carousel-track]", carousel);
+    const slides = selectAll(".carousel__slide", track);
+    const prev = select("[data-carousel-prev]", carousel);
+    const next = select("[data-carousel-next]", carousel);
+    const dotsWrap = select("[data-carousel-dots]", carousel);
+    if (!track || slides.length === 0) return;
+
+    let index = 0;
+
+    const dots = slides.map((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "carousel__dot";
+      dot.setAttribute("role", "tab");
+      dot.setAttribute("aria-label", "Ir para o depoimento " + (i + 1));
+      dot.addEventListener("click", () => goTo(i));
+      dotsWrap && dotsWrap.appendChild(dot);
+      return dot;
+    });
+
+    const update = () => {
+      track.style.transform = "translateX(-" + index * 100 + "%)";
+      slides.forEach((slide, i) => slide.setAttribute("aria-hidden", String(i !== index)));
+      dots.forEach((dot, i) => {
+        const active = i === index;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-selected", String(active));
+      });
+    };
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      update();
+    }
+
+    prev && prev.addEventListener("click", () => goTo(index - 1));
+    next && next.addEventListener("click", () => goTo(index + 1));
+
+    const viewport = select("[data-carousel-viewport]", carousel);
+    viewport &&
+      viewport.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") { e.preventDefault(); goTo(index - 1); }
+        if (e.key === "ArrowRight") { e.preventDefault(); goTo(index + 1); }
+      });
+
+    update();
   });
 
   /* ---------- Ano dinâmico no rodapé ---------- */
